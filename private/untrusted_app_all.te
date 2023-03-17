@@ -151,6 +151,7 @@ dontaudit untrusted_app_all {
   proc_vmstat
   proc_zoneinfo
 }:file read;
+dontaudit untrusted_app_all camera2_exported_camera_prop:file read;
 
 # Allow the allocation and use of ptys
 # Used by: https://play.google.com/store/apps/details?id=jackpal.androidterm

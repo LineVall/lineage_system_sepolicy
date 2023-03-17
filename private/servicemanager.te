@@ -12,3 +12,5 @@ use_bootstrap_libs(servicemanager)
 
 # servicemanager is using apex_info via libvintf
 use_apex_info(servicemanager)
+
+get_prop(servicemanager, camera2_exported_camera_prop)
