@@ -20,3 +20,6 @@ allow untrusted_app_29 self:netlink_route_socket nlmsg_getneigh;
 auditallow untrusted_app_29 self:netlink_route_socket nlmsg_getneigh;
 
 dontaudit untrusted_app_29 camera2_exported_camera_prop:file read;
+
+# Allow hidden build props
+get_prop(untrusted_app_29, userdebug_or_eng_prop)
